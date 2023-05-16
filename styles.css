@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.parallax-container {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#section1 {
+  background-image: url('public/background1.jpg');
+}
+
+#section2 {
+  background-image: url('public/background2.jpg');
+}
+
+#section3 {
+  background-image: url('public/background3.jpg');
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.content.visible {
+  opacity: 1;
+}
+
